@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+body, html {
+    height: 50%;
+    margin: 0; 
+}
+.bg {
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background: url("nyu.jpeg") no-repeat center top fixed;
+          
+}
+.tabs-icon {
+font-size: 10px;
+overflow: hidden;
+}
+.tabs-icon i {
+padding-top: 10px;
+}
+</style>
+
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>
+Hitarthi
+</title>
+</head>
+
+<body background="nyu.jpeg">
+
+<div class="row" style="padding-top: 20px;opacity: 0.95">
+<div class="center-align">
+<div class="col s6 offset-s3">
+<div class="card grey lighten-4" style="height: 550px">
+<div class="card-content black-text">
+<span class="card-title"><b>WELCOME</b></span>
+<p>Student University Social Network</p>
+</div>
+
+<ul id="tabs-swipe-demo" class="tabs tabs-icon">
+<li class="tab col s6"><a href="#test-swipe-1"><i class="small material-icons prefix">assignment_ind</i>
+  <span style="position: relative; bottom: 10px;">Sign Up</span></a></li>
+<li class="tab col s6"><a class="active" href="#test-swipe-2"><i class="small material-icons prefix">input</i>
+  <span style="position: relative; bottom: 10px;">Log In</a></li>
+</ul>
+
+<ul>
+<div id="test-swipe-1" class="col s12" style="padding-top: 10px">   
+<div class="row">
+<form class="col s12" action="signup_login.php" method="post">
+<div class="row">
+  <div class="input-field col s6">
+    <input placeholder="Enter your name here" id="first_name" name="name" type="text" class="validate">
+    <label for="name">Name</label>
+  </div>
+  <div class="input-field col s6">
+    <input id="user_name" type="text" name="UserName" class="validate">
+    <label for="user_name">User Name</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s12">
+    <input placeholder="example@nyu.edu" id="email" name="email" type="email" class="validate">
+    <label for="email">Email</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s12">
+    <input placeholder="" id="password" type="password" name="password" class="validate">
+    <label for="password">Password</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s12">
+    <button class="btn waves-effect grey" type="submit" name="register" style="color: white;">Register
+    <i class="material-icons right">send</i>
+    </button>
+  </div>
+</div>
+ </form>
+</div>
+
+</div>     
+
+<!--<div id="test-swipe-2" class="col s12">-->
+
+<div id="test-swipe-1" class="col s12">   
+<div class="row">
+<form class="col s12" action="signup_login.php" method="post">
+
+<div class="row">
+  <div class="input-field col s12">
+    <input placeholder="example@nyu.edu" id="email" type="email" name="loginemail" class="validate">
+    <label for="email">Email</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s12">
+    <input id="password" type="password" name="loginpassword" class="validate">
+    <label for="password">Password</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="input-field col s12">
+    <button class="btn waves-effect grey" type="submit" name="login" style="color: white;">Submit
+    <i class="material-icons right">send</i>
+    </button>
+  </div>
+</div>
+ </form>
+</div>
+</div>   
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
